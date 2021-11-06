@@ -8,7 +8,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        String text = "Sin Filas";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 }
