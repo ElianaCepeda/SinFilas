@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< Updated upstream
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33958333333333335" />
+=======
+        <entry key="..\:/Users/shopservice/Documents/GitHub/SinFilas/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/shopservice/Documents/GitHub/SinFilas/app/src/main/res/layout/activity_main.xml" value="0.2" />
+>>>>>>> Stashed changes
       </map>
     </option>
   </component>
