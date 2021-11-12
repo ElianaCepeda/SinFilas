@@ -6,4 +6,88 @@
     android:layout_height="match_parent"
     tools:context=".miperfil">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Mi Perfil"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/etapellidos2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <EditText
+        android:id="@+id/etcedula2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Cedula"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="192dp" />
+
+    <EditText
+        android:id="@+id/ettelefono2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Telefono o celular"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <EditText
+        android:id="@+id/etRegEmail2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Email o Correo"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <EditText
+        android:id="@+id/etnombres2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Nombres"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <EditText
+        android:id="@+id/etRegUsuario2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="370dp" />
+
+    <Button
+        android:id="@+id/btRegRegistrarse2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="validarclave"
+        android:text="registrarse"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="474dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

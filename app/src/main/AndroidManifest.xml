@@ -13,9 +13,6 @@
             android:name=".asignarcitas"
             android:exported="false" />
         <activity
-            android:name=".bancos"
-            android:exported="false" />
-        <activity
             android:name=".miscitas"
             android:exported="false" />
         <activity

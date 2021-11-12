@@ -5,8 +5,8 @@
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
-        <item name="android:colorBackground">@color/gray</item>
-        <item name="android:editTextBackground">@color/white</item>
+        <item name="android:colorBackground">@color/azul_suave</item>
+        <item name="android:editTextBackground">@color/gray</item>
 
 
         <!-- Secondary brand color. -->
