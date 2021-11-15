@@ -10,91 +10,102 @@
     <EditText
         android:id="@+id/etusuario"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="78dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
         android:hint="Nombre de Usuario"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/etrecordarclave"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/etclave"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="142dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="79dp"
-        android:layout_marginBottom="35dp"
+        android:layout_width="185dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/rebaja"
         app:layout_constraintBottom_toTopOf="@+id/etusuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692"
-        tools:srcCompat="@mipmap/logo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btinisesion"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="286dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="233dp"
+        android:onClick="validar"
         android:text="Iniciar Sesion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etrecordarclave" />
+        app:layout_constraintTop_toBottomOf="@+id/etregistronuevo" />
 
     <EditText
         android:id="@+id/etclave"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
+        android:paddingLeft="20dp"
         app:layout_constraintBottom_toTopOf="@+id/etrecordarclave"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etusuario" />
 
     <TextView
         android:id="@+id/etrecordarclave"
-        android:layout_width="108dp"
-        android:layout_height="17dp"
-        android:layout_marginBottom="22dp"
-        android:text="¿Recordar Contraseña?"
-        android:textColor="#3F51B5"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toTopOf="@+id/btinisesion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.326"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etusuario" />
-
-    <view
-        android:id="@+id/view"
-        class="androidx.appcompat.widget.ActionMenuView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="73dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="72dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:text="¿Recordar Contraseña?"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/etregistronuevo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/etclave" />
+
+    <TextView
+        android:id="@+id/etregistronuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="nuevoregistro"
+        android:text="¿Regisro Nuevo?"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btinisesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etrecordarclave" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="664dp"
         android:onClick="inicio"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_revert" /><![CDATA[
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="SpeakableTextPresentCheck" /><![CDATA[
 
 
 

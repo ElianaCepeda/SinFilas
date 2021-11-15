@@ -25,7 +25,7 @@ public class Login extends AppCompatActivity {
         String clave = etclave.getText().toString();
         //  validacion de datos usuario y contraseña
         if ( usuario.equals("admin") && clave.equals("12345")){
-            Intent i = new Intent(this, Login.class);
+            Intent i = new Intent(this, miscitas.class);
             i.putExtra("Nombre",usuario);
             startActivity(i);
         }else{
@@ -34,20 +34,23 @@ public class Login extends AppCompatActivity {
 
         }
     }
+
     // Ingresa a la activity de inicio
     public void inicio (View view){
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
+
     // Ingresa a la activity mis citas
     public void misCitas (View view){
         Intent i = new Intent(this, Login.class);
         startActivity(i);
     }
+
     // Ingresa a la activity regitro
     public void nuevoregistro (View view){
 
-        Intent i = new Intent(this, Login.class);
+        Intent i = new Intent(this, registro.class);
         startActivity(i);
 
     }
