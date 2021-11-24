@@ -8,14 +8,22 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class miperfil extends AppCompatActivity {
+public class recordarClave extends AppCompatActivity {
+
+    TextView etantigua,etnueva,etrenueva;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_miperfil);
+        setContentView(R.layout.activity_recordar_clave);
+
+        etantigua = findViewById(R.id.etclavevieja);
+        etnueva = findViewById(R.id.etclavenueva);
+        etrenueva = findViewById(R.id.etreclavenueva);
+
     }
 
     @Override
@@ -24,6 +32,7 @@ public class miperfil extends AppCompatActivity {
         inflater.inflate(R.menu.menu1, menu);
         return true;
     }
+
     public boolean  onOptionsItemSelected(MenuItem item){
         int id =item.getItemId();
 
@@ -37,8 +46,8 @@ public class miperfil extends AppCompatActivity {
                 startActivity(i);
 
             }else if (id==R.id.menu_miscitas){
-                    Intent i = new Intent(this, miscitas.class);
-                    startActivity(i);
+                Intent i = new Intent(this, miscitas.class);
+                startActivity(i);
             }else{
                 if (id==R.id.menu_cerrarsesion){
                     Intent i = new Intent(this, MainActivity.class);
@@ -48,8 +57,29 @@ public class miperfil extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    public void recordarclave2 (View view){
-        Intent i = new Intent(this, recordarClave.class);
-        startActivity(i);
+
+    // Ingresa y valida la contraseña usuarios registrados
+    public void validar (View view){
+        String claveantigua = etantigua.getText().toString();
+        String clave = etnueva.getText().toString();
+        String reclave = etrenueva.getText().toString();
+        //  validacion de datos usuario y contraseña
+        if ( claveantigua.equals("12345")){
+
+            if ( clave == reclave){
+
+                Toast.makeText(this, "Clave Actualizada",Toast.LENGTH_LONG).show();
+
+            }else{
+
+                Toast.makeText(this, "la Clave Nueva y la confirmacion NO son iguales" ,Toast.LENGTH_LONG).show();
+
+            }
+        }
+        else{
+
+            Toast.makeText(this, "Error en la contraseña Antigua" ,Toast.LENGTH_LONG).show();
+
+        }
     }
 }

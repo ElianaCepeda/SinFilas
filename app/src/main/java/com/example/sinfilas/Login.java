@@ -42,8 +42,8 @@ public class Login extends AppCompatActivity {
     }
 
     // Ingresa a la activity mis citas
-    public void misCitas (View view){
-        Intent i = new Intent(this, Login.class);
+    public void recordarclave (View view){
+        Intent i = new Intent(this, recordarClave.class);
         startActivity(i);
     }
 

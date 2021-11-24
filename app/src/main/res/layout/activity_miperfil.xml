@@ -10,84 +10,131 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Mi Perfil"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/etnombres2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etapellidos2"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="Apellidos"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="131dp" />
+        app:layout_constraintBottom_toTopOf="@+id/etcedula2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnombres2" />
 
     <EditText
         android:id="@+id/etcedula2"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="Cedula"
         android:inputType="number"
         android:paddingLeft="20dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="192dp" />
+        app:layout_constraintBottom_toTopOf="@+id/ettelefono2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etapellidos2" />
 
     <EditText
         android:id="@+id/ettelefono2"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="Telefono o celular"
         android:inputType="number"
         android:paddingLeft="20dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="248dp" />
+        app:layout_constraintBottom_toTopOf="@+id/etRegEmail2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcedula2" />
 
     <EditText
         android:id="@+id/etRegEmail2"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="Email o Correo"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="306dp" />
+        app:layout_constraintBottom_toTopOf="@+id/etRegUsuario2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ettelefono2" />
 
     <EditText
         android:id="@+id/etnombres2"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Nombres"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="71dp" />
+        app:layout_constraintBottom_toTopOf="@+id/etapellidos2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/etRegUsuario2"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="Usuario"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="370dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRegEmail2" />
 
     <Button
         android:id="@+id/btRegRegistrarse2"
         android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="219dp"
+        android:onClick="recordarclave2"
+        android:text="actualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etrecordarclave4" />
+
+    <TextView
+        android:id="@+id/etrecordarclave4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="validarclave"
-        android:text="registrarse"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="474dp" />
+        android:layout_marginTop="15dp"
+        android:onClick="recordarclave2"
+        android:text="¿Cambiar Contraseña?"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btRegRegistrarse2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRegUsuario2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,16 +30,14 @@ public class asignarcitas extends AppCompatActivity {
 
             Intent i = new Intent(this, miperfil.class);
             startActivity(i);
-        } else {
-            if (id== R.id.menu_nuevacita){
+        }else if (id== R.id.menu_nuevacita){
                 Intent i = new Intent(this, asignarcitas.class);
                 startActivity(i);
 
-            }else{
-                if (id==R.id.menu_miscitas){
-                    Intent i = new Intent(this, miscitas.class);
-                    startActivity(i);
-                }
+        }else{
+            if (id==R.id.menu_cerrarsesion){
+                Intent i = new Intent(this, MainActivity.class);
+                startActivity(i);
             }
         }
         return super.onOptionsItemSelected(item);

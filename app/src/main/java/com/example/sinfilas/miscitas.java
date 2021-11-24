@@ -38,9 +38,12 @@ public class miscitas extends AppCompatActivity {
                 Intent i = new Intent(this, asignarcitas.class);
                 startActivity(i);
 
-            }else{
-                if (id==R.id.menu_miscitas){
+            }else if (id==R.id.menu_miscitas){
                     Intent i = new Intent(this, miscitas.class);
+                    startActivity(i);
+            }else{
+                if (id==R.id.menu_cerrarsesion){
+                    Intent i = new Intent(this, MainActivity.class);
                     startActivity(i);
                 }
             }
