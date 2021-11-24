@@ -48,8 +48,12 @@ public class miperfil extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    // Ingresa a la activity mis citas
     public void recordarclave2 (View view){
         Intent i = new Intent(this, recordarClave.class);
         startActivity(i);
+    }
+    public void actualizardatos(View view){
+        Toast.makeText(this, "Datos Actualizados",Toast.LENGTH_LONG).show();
     }
 }
