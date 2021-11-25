@@ -42,7 +42,7 @@ public class cambiarClave extends AppCompatActivity {
             startActivity(i);
         } else {
             if (id== R.id.menu_nuevacita){
-                Intent i = new Intent(this, asignarcitas.class);
+                Intent i = new Intent(this, UbicacionBanco.class);
                 startActivity(i);
 
             }else if (id==R.id.menu_miscitas){

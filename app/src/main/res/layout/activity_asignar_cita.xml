@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AsignarCita">
+
+  <EditText
+      android:id="@+id/etnombres4"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_marginBottom="12dp"
+      android:ems="10"
+      android:hint="Cédula"
+      android:inputType="textPersonName"
+      android:paddingLeft="20dp"
+      app:layout_constraintBottom_toTopOf="@+id/etnombres5"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etnombres3" />
+
+  <EditText
+      android:id="@+id/etnombres5"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_marginBottom="11dp"
+      android:ems="10"
+      android:hint="Teléfono"
+      android:inputType="textPersonName"
+      android:paddingLeft="20dp"
+      app:layout_constraintBottom_toTopOf="@+id/etnombres6"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etnombres4" />
+
+  <EditText
+      android:id="@+id/etnombres6"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_marginBottom="31dp"
+      android:ems="10"
+      android:hint="e-mail"
+      android:inputType="textPersonName"
+      android:paddingLeft="20dp"
+      app:layout_constraintBottom_toTopOf="@+id/btAgendar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etnombres5" />
+
+  <EditText
+      android:id="@+id/etnombres3"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_marginBottom="13dp"
+      android:ems="10"
+      android:hint="Nombre Completo"
+      android:inputType="textPersonName"
+      android:paddingLeft="20dp"
+      app:layout_constraintBottom_toTopOf="@+id/etnombres4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+  <Spinner
+      android:id="@+id/spinner_horarios"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="1dp"
+      android:layout_marginEnd="1dp"
+      android:layout_marginBottom="59dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="311dp"
+      android:layout_height="55dp"
+      android:layout_marginBottom="16dp"
+      android:editable="false"
+      android:maxLines="2"
+      android:text="Por favor diligencie los siguiente datos para agendar su cita"
+      android:textSize="16sp"
+      app:autoSizeTextType="none"
+      app:layout_constraintBottom_toTopOf="@+id/etnombres3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spinner_horarios" />
+
+  <Button
+      android:id="@+id/btAgendar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="137dp"
+      android:onClick="miscitas"
+      android:text="Agendar"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/etnombres6"
+      app:layout_constraintTop_toBottomOf="@+id/etnombres6" />
+
+  <TextView
+      android:id="@+id/textView5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:layout_marginBottom="50dp"
+      android:text="Angenda tu cita"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/spinner_horarios"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/textView6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="48dp"
+      android:layout_marginTop="32dp"
+      android:text="Por favor esocge un horario"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="@+id/spinner_horarios"
+      app:layout_constraintTop_toBottomOf="@+id/textView5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

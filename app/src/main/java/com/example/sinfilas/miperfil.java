@@ -33,7 +33,7 @@ public class miperfil extends AppCompatActivity {
             startActivity(i);
         } else {
             if (id== R.id.menu_nuevacita){
-                Intent i = new Intent(this, asignarcitas.class);
+                Intent i = new Intent(this, UbicacionBanco.class);
                 startActivity(i);
 
             }else if (id==R.id.menu_miscitas){
@@ -48,7 +48,7 @@ public class miperfil extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    // Ingresa a la activity mis citas
+    // Ingresa a la activity cambiar clave
     public void recordarclave2 (View view){
         Intent i = new Intent(this, cambiarClave.class);
         startActivity(i);

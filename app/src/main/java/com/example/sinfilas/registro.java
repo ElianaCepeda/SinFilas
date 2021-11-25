@@ -30,10 +30,8 @@ public class registro extends AppCompatActivity {
 
     // Ingresa y valida los datos de los usuarios registrados
     public void registro (){
-
             Toast mensaje = Toast.makeText(this, "registro exitoso",Toast.LENGTH_LONG);
             mensaje.show();
-
     }
 
     public void validarclave(View view){

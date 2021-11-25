@@ -41,7 +41,7 @@ public class Login extends AppCompatActivity {
         startActivity(i);
     }
 
-    // Ingresa a la activity mis citas
+    // Ingresa a la activity recuperar clave
     public void recuperarclave (View view){
         Intent i = new Intent(this, recuperarClave.class);
         startActivity(i);
@@ -49,7 +49,6 @@ public class Login extends AppCompatActivity {
 
     // Ingresa a la activity regitro
     public void nuevoregistro (View view){
-
         Intent i = new Intent(this, registro.class);
         startActivity(i);
 
