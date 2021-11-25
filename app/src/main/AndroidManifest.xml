@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SinFilas">
         <activity
-            android:name=".recordarClave"
+            android:name=".recuperarClave"
+            android:exported="false" />
+        <activity
+            android:name=".cambiarClave"
             android:exported="false" />
         <activity
             android:name=".asignarcitas"

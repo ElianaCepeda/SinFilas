@@ -11,14 +11,14 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class recordarClave extends AppCompatActivity {
+public class cambiarClave extends AppCompatActivity {
 
     TextView etantigua,etnueva,etrenueva;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recordar_clave);
+        setContentView(R.layout.activity_cambiar_clave);
 
         etantigua = findViewById(R.id.etclavevieja);
         etnueva = findViewById(R.id.etclavenueva);

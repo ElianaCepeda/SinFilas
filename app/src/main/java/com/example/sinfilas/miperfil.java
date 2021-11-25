@@ -50,7 +50,7 @@ public class miperfil extends AppCompatActivity {
     }
     // Ingresa a la activity mis citas
     public void recordarclave2 (View view){
-        Intent i = new Intent(this, recordarClave.class);
+        Intent i = new Intent(this, cambiarClave.class);
         startActivity(i);
     }
     public void actualizardatos(View view){
