@@ -49,8 +49,6 @@ public class Login extends AppCompatActivity {
                         Intent i = new Intent(Login.this, miscitas.class);
                         startActivity(i);
                     } else {
-                        etusuario.setText(task.getException().getClass().getName());
-
                         Toast.makeText(Login.this, "Ingreso fallido, si aún no se ha registrado por favor hagalo antes de ingresar", Toast.LENGTH_LONG).show();
                     }
                 }
