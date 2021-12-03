@@ -1,15 +1,23 @@
 package com.example.sinfilas;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Login extends AppCompatActivity {
     private EditText etusuario, etclave;
+    private FirebaseAuth autenticacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,22 +26,42 @@ public class Login extends AppCompatActivity {
 
         etusuario = findViewById(R.id.etusuario);
         etclave = findViewById(R.id.etclave);
+        autenticacion = FirebaseAuth.getInstance();
     }
-    // Ingresa y valida los datos de los usuarios registrados
-    public void validar (View view){
-        String usuario = etusuario.getText().toString();
-        String clave = etclave.getText().toString();
-        //  validacion de datos usuario y contraseña
-        if ( usuario.equals("admin") && clave.equals("12345")){
-            Intent i = new Intent(this, miscitas.class);
-            i.putExtra("Nombre",usuario);
-            startActivity(i);
-        }else{
-            Toast mensaje = Toast.makeText(this, "Por favor Verifique el usuario y contraseña",Toast.LENGTH_LONG);
-            mensaje.show();
 
+
+    // Ingresa y valida los datos de los usuarios registrados
+    public void login(View view){
+        try {
+            if (TextUtils.isEmpty(etusuario.getText().toString()))
+                throw new Exception("El campo Usuario no puede estar vacio");
+            if (TextUtils.isEmpty(etclave.getText().toString()))
+                throw new Exception("El campo Contraseña no puede estar vacio");
+            String usuario = etusuario.getText().toString();
+            String contraseña = etclave.getText().toString();
+
+            autenticacion.signInWithEmailAndPassword(usuario, contraseña).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        Toast mensaje = Toast.makeText(Login.this, "Ingreso exitoso", Toast.LENGTH_LONG);
+                        mensaje.show();
+                        Intent i = new Intent(Login.this, miscitas.class);
+                        startActivity(i);
+                    } else {
+                        etusuario.setText(task.getException().getClass().getName());
+
+                        Toast.makeText(Login.this, "Ingreso fallido, si aún no se ha registrado por favor hagalo antes de ingresar", Toast.LENGTH_LONG).show();
+                    }
+                }
+            });
+        } catch (Exception e) {
+            Toast mensaje = Toast.makeText(Login.this, e.getMessage(), Toast.LENGTH_LONG);
+            mensaje.show();
         }
     }
+
+
 
     // Ingresa a la activity de inicio
     public void inicio (View view){
@@ -41,11 +69,13 @@ public class Login extends AppCompatActivity {
         startActivity(i);
     }
 
+
     // Ingresa a la activity recuperar clave
     public void recuperarclave (View view){
         Intent i = new Intent(this, recuperarClave.class);
         startActivity(i);
     }
+
 
     // Ingresa a la activity regitro
     public void nuevoregistro (View view){

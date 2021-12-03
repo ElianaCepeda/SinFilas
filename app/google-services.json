@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "927298328904",
+    "project_id": "sinfilas-3a4cd",
+    "storage_bucket": "sinfilas-3a4cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927298328904:android:acb656fd262d2e6e447b7d",
+        "android_client_info": {
+          "package_name": "com.example.sinfilas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927298328904-9ehfu2i9pkvrcgskctquaoum404pccd3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.application",
+            "certificate_hash": "f0c3643ccebd5ff7e2d14bb910fdbd566c14d298"
+          }
+        },
+        {
+          "client_id": "927298328904-157i61gcetukg2tv6fee34unk9tducjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV39NpG6fWpNzpSCPQ7s3DjOlOI-z8mUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927298328904-157i61gcetukg2tv6fee34unk9tducjk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
