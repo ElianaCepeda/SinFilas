@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -23,17 +25,25 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class UbicacionBanco extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private Spinner sp1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ubicacion_banco);
 
+        sp1.findViewById(R.id.spinner);
+
+        String [] bancos = {"Bancolombia", "Davivienda","Colpatria","BBVA"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,bancos);
+        sp1.setAdapter(adapter);
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mapView);
         mapFragment.getMapAsync(this);
     }
+
 
     // Ir al activiy asignar cita
     public void asignarcita(View view) {
