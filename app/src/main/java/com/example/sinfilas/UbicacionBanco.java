@@ -81,7 +81,7 @@ public class UbicacionBanco extends AppCompatActivity implements OnMapReadyCallb
         }
         return super.onOptionsItemSelected(item);
     }
-
+    // creacion de el mapa
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         mMap = googleMap;
