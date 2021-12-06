@@ -32,7 +32,7 @@ public class UbicacionBanco extends AppCompatActivity implements OnMapReadyCallb
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ubicacion_banco);
 
-        sp1.findViewById(R.id.spinner);
+        sp1= findViewById(R.id.spinner);
 
         String [] bancos = {"Bancolombia", "Davivienda","Colpatria","BBVA"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,bancos);
