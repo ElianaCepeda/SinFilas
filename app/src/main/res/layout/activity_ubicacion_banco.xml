@@ -39,7 +39,7 @@
         android:id="@+id/spinner"
         android:layout_width="224dp"
         android:layout_height="63dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
