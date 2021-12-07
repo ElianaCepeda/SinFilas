@@ -67,11 +67,14 @@
 
   <Spinner
       android:id="@+id/spinner_horarios"
-      android:layout_width="0dp"
+      android:layout_width="wrap_content"
       android:layout_height="0dp"
       android:layout_marginStart="1dp"
+      android:layout_marginTop="20dp"
       android:layout_marginEnd="1dp"
-      android:layout_marginBottom="59dp"
+      android:scrollbarSize="6dp"
+      app:flow_verticalAlign="center"
+      app:flow_verticalStyle="packed"
       app:layout_constraintBottom_toTopOf="@+id/textView4"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -81,6 +84,7 @@
       android:id="@+id/textView4"
       android:layout_width="311dp"
       android:layout_height="55dp"
+      android:layout_marginTop="20dp"
       android:layout_marginBottom="16dp"
       android:editable="false"
       android:maxLines="2"
@@ -94,12 +98,14 @@
 
   <Button
       android:id="@+id/btAgendar"
-      android:layout_width="wrap_content"
+      android:layout_width="105dp"
       android:layout_height="wrap_content"
+      android:layout_marginEnd="206dp"
       android:layout_marginBottom="137dp"
       android:onClick="miscitas"
       android:text="Agendar"
       app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="@+id/etEmailAC"
       app:layout_constraintTop_toBottomOf="@+id/etEmailAC" />
 
@@ -118,12 +124,15 @@
 
   <TextView
       android:id="@+id/textView6"
-      android:layout_width="wrap_content"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginStart="40dp"
       android:layout_marginTop="28dp"
+      android:layout_marginEnd="40dp"
       android:text="Por favor esocge un horario"
       android:textSize="16sp"
+      app:layout_constraintBottom_toTopOf="@+id/spinner_horarios"
+      app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="@+id/spinner_horarios"
       app:layout_constraintTop_toBottomOf="@+id/textView5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
