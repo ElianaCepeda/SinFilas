@@ -10,8 +10,9 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
         android:text="buscar"
         app:layout_constraintBottom_toTopOf="@+id/mapView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,41 +21,43 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="0dp"
+        android:layout_width="267dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
         android:ems="10"
         android:hint="MI direccion"
         android:inputType="textPersonName"
         android:textColor="@android:color/darker_gray"
         app:layout_constraintBottom_toTopOf="@+id/mapView"
         app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="355dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="224dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <fragment
         android:id="@+id/mapView"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="20dp"
+        android:layout_width="384dp"
+        android:layout_height="454dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toTopOf="@+id/btseleccionar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4"
         tools:context=".MapsActivity" />
@@ -63,11 +66,13 @@
         android:id="@+id/btseleccionar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="59dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="61dp"
         android:onClick="asignarcita"
         android:text="SELECCIONAR LUGAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mapView" />
 
